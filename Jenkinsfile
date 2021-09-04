@@ -1,14 +1,15 @@
 pipeline {
-    agent any
-    stages {
-        stage ('Build') {
-            steps {
-                sh 'echo "Oi para nosso Jenkins"'
-                sh '''
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'echo "Oi para nosso Jenkins"'
+        sh '''
                     echo "Nossa pipeline"
                     ls -la
                 '''
-            }
-        }
+      }
     }
+
+  }
 }
